@@ -1,0 +1,301 @@
+@import './mixins';
+@import './preflight';
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+:root {
+  --primary-color: #2D2D2D;
+  font-family: 'Epilogue', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: var(--primary-color);
+}
+
+.container {
+  @include tablet {
+    max-width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 24px;
+
+  @include tablet {
+    flex-wrap: nowrap;
+  }
+
+  .menu-toggler {
+
+    @include tablet {
+      display: none;
+    }
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 1rem;
+    padding: 22px 2rem;
+
+    @include tablet {
+      display: flex;
+      background-color: transparent;
+      color: var(--primary-color);
+      margin-top: 0;
+      padding: 0;
+      width: auto;
+
+      .menu-items {
+        display: flex;
+      }
+    }
+
+    .menu-item {
+      display: block;
+      padding: 6px 0;
+
+      &:hover,
+      &:hover {
+        text-decoration: underline;
+      }
+
+      @include tablet {
+        padding: 6px 0 6px 24px;
+      }
+    }
+  }
+
+  .logo {
+    svg {
+      width: 140px;
+      height: 23px;
+    }
+  }
+}
+
+.hero {
+  text-align: center;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  
+  .hero-abilities {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .hero-title {
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 72px;
+    margin-bottom: 16px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+
+    .hero-body {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+    }
+  }
+}
+
+.cards {
+  padding: 24px;
+  display: grid;
+  gap: 24px;
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 80px 24px;
+  }
+}
+
+.card {
+  text-align: center;
+
+  .card-illustration {
+    margin-bottom: 16px;
+    margin: 0 auto 42px;
+  }
+
+  .card-title {
+    font-weight: 600;
+    font-size: 27px;
+  }
+
+  .card-description {
+    font-size: 14px;
+    line-height: 27px;
+  }
+
+  @include tablet {
+    .card-description {
+      font-size: 18px;
+    }
+  }
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 42px;
+  }
+}
+
+.latest-work-section {
+  padding: 24px;
+
+  @include tablet {
+    padding: 42px 24px;
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.project {
+  .project-illustration {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .project-title {
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  .project-description {
+    font-size: 14px;
+  }
+
+  @include tablet {
+    .project-title {
+      font-size: 20px;
+    }
+
+    .project-description {
+      font-size: 18px;
+    }
+  }
+}
+
+.input {
+  background-color: #F3F3F3;
+  color: var(--primary-color);
+  font-size: 18px;
+  border: none;
+  padding: 16px 24px;
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 16px 42px;
+  cursor: pointer;
+  font-size: 20px;
+  display: inline-block;
+
+
+  &:hover,
+  &:focus {}
+}
+
+.footer {
+  padding: 24px;
+
+  .footer-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  .footer-paragraph {
+    text-align: center;
+  }
+  @include tablet {
+    .footer-title {
+      text-align: left;
+    }
+    .footer-paragraph {
+      text-align: left;
+    }
+  }
+  .footer-body {
+    display: grid;
+    gap: 42px;
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+
+    &>.input {
+      margin-bottom: 16px;
+    }
+
+    .footer-actions {
+      display: flex;
+      justify-content: center;
+    }
+
+    @include tablet {
+      .footer-actions {
+        display: flex;
+        justify-content: start;
+      }
+    }
+  }
+
+  @include tablet {
+    padding: 42px 24px;
+  }
+}
