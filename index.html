@@ -5,12 +5,13 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>Elmehdi ElFatihi's Portfolio</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
-  <div class="container">
-    <header class="navbar">
+  <div class="container navbar-container">
+    <header class="navbar" x-data="{isMenuOpen: false}">
       <a href="/" class="logo">
         <svg width="100" height="17" viewBox="0 0 100 17" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
@@ -39,13 +40,13 @@
             fill="#2D2D2D" />
         </svg>
       </a>
-      <button class="menu-toggler">
+      <button class="menu-toggler" x-on:click="isMenuOpen=!isMenuOpen">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
           class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
         </svg>
       </button>
-      <nav class="menu">
+      <nav class="menu" x-bind:class="{'active': isMenuOpen}">
         <ul class="menu-items">
           <li>
             <a class="menu-item" href="#">
