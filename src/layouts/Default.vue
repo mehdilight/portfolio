@@ -118,6 +118,20 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'Home',
+  metaInfo: {
+    htmlAttrs: {
+      lang: 'en',
+    },
+    bodyAttrs: {
+      class: 'custom-body-class'
+    }
+  }
+}
+</script>
+
 <static-query>
 query {
   metadata {

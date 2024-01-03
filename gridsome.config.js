@@ -6,5 +6,7 @@
 
 module.exports = {
   siteName: 'Gridsome',
+  icon: 'src/favicon.svg',
+  siteDescription: "I am a Software Engineer based in Morocco. Currently Open for new opportunities, my job is helping folks level up their webapps.",
   plugins: []
 }

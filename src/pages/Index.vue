@@ -118,7 +118,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: "ElMehdi El Fatihi's portfolio"
   }
 }
 </script>
