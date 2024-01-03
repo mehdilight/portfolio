@@ -57,6 +57,7 @@ const IndexPage = () => {
               href="https://fm-quiz-app-six.vercel.app/"
               className="project-wrapper"
               target="_blank"
+              rel="noreferrer"
             >
               <article className="project">
                 <div className="project-illustration-wrapper">
@@ -70,6 +71,7 @@ const IndexPage = () => {
               href="https://fm-rest-countries-phi.vercel.app/"
               className="project-wrapper"
               target="_blank"
+              rel="noreferrer"
             >
               <article className="project">
                 <div className="project-illustration-wrapper">
@@ -83,6 +85,7 @@ const IndexPage = () => {
               href="https://aerolab-coding-challenge-dun.vercel.app/"
               className="project-wrapper"
               target="_blank"
+              rel="noreferrer"
             >
               <article className="project">
                 <div className="project-illustration-wrapper">
@@ -96,6 +99,7 @@ const IndexPage = () => {
               href="https://peaceful-swirles-f2d06c.netlify.app/"
               className="project-wrapper"
               target="_blank"
+              rel="noreferrer"
             >
               <article className="project">
                 <div className="project-illustration-wrapper">
