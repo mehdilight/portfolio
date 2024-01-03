@@ -268,10 +268,6 @@ body {
   cursor: pointer;
   font-size: 20px;
   display: inline-block;
-
-
-  &:hover,
-  &:focus {}
 }
 
 .footer {
@@ -286,6 +282,7 @@ body {
 
   .footer-paragraph {
     text-align: center;
+    margin-bottom: 10px;
   }
 
   @include tablet {
@@ -324,6 +321,27 @@ body {
       .footer-actions {
         display: flex;
         justify-content: start;
+      }
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+
+    @include tablet {
+      justify-content: start;
+    }
+
+    & > li:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    .footer-link {
+      svg {
+        fill: currentColor;
+        width: 30px;
+        height: 30px;
       }
     }
   }
