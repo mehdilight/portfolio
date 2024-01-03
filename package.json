@@ -1,15 +1,16 @@
 {
-  "name": "portfolio",
+  "name": "portfolio-optimized",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0"
   },
   "devDependencies": {
-    "sass": "^1.69.6",
-    "vite": "^5.0.8"
+    "sass": "^1.69.7",
+    "sass-loader": "^10.5.1"
   }
 }
