@@ -100,7 +100,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
-  
+
   .hero-abilities {
     display: block;
     font-size: 20px;
@@ -148,6 +148,7 @@ body {
   text-align: center;
 
   .card-illustration {
+    height: 128px;
     margin-bottom: 16px;
     margin: 0 auto 42px;
   }
@@ -198,10 +199,38 @@ body {
   }
 }
 
+.project-wrapper {
+
+  &:hover,
+  &:focus {
+    .project-illustration {
+      transform: scale(1.2);
+      opacity: 0.8;
+    }
+    .project-title {
+      color: #009379;
+    }
+    .project-description {
+      color: #009379;
+    }
+  }
+}
+
 .project {
   .project-illustration {
+    transition: all .2s ease-in-out;
+    position: absolute;
     width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .project-illustration-wrapper {
+    position: relative;
     margin-bottom: 16px;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
   }
 
   .project-title {
@@ -258,17 +287,21 @@ body {
   .footer-paragraph {
     text-align: center;
   }
+
   @include tablet {
     .footer-title {
       text-align: left;
     }
+
     .footer-paragraph {
       text-align: left;
     }
   }
+
   .footer-body {
     display: grid;
     gap: 42px;
+
     @include tablet {
       grid-template-columns: 1fr 1fr;
     }
