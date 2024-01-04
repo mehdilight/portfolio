@@ -6,7 +6,7 @@ const Header = () => {
       <header className="navbar">
         <a href="/" className="logo" title="Home">
           <svg width="100" height="17" viewBox="0 0 100 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
+            <path fillRule="evenodd" clipRule="evenodd"
               d="M8 0.5V4.5H0V16.5H8V12.5H16V0.5H8ZM4 12.5H8V8.5H12V4.5H8V8.5H4V12.5Z" fill="#2D2D2D" />
             <path d="M28.112 4.784V7.448H31.952V9.288H28.112V12.12H32.744V14H25.488V2.912H32.736L32.472 4.784H28.112Z"
               fill="#2D2D2D" />
@@ -33,9 +33,9 @@ const Header = () => {
           </svg>
         </a>
         <button className="menu-toggler" title="Toggle Menu">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
             className="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
           </svg>
         </button>
         <nav className="menu">
