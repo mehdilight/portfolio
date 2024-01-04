@@ -41,7 +41,7 @@ const Header = () => {
         <nav className="menu">
           <ul className="menu-items">
             <li>
-              <a className="menu-item" href="#">
+              <a className="menu-item" href="/">
                 About
               </a>
             </li>
