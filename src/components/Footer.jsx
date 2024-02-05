@@ -65,7 +65,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <form className="footer-form">
+            <form className="footer-form" name="contact" method="POST" data-netlify="true">
               <input className="input" type="text" placeholder="Name" />
               <input className="input" type="text" placeholder="Email" />
               <div className="footer-actions">
