@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `portfolio-optimized`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://elfatihi.me/`
   },
   plugins: [
     "gatsby-plugin-sass",
