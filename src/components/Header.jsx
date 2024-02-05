@@ -48,7 +48,7 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a className="menu-item" href="#main-footer">
+              <a className="menu-item" href="mailto:elmehdielfatihi1111@gmail.com">
                 Contact
               </a>
             </li>

@@ -16,7 +16,7 @@ const IndexPage = () => {
               I am a Software Engineer based in Morocco. Currently Open for new
               opportunities, my job is helping folks level up their webapps.
             </p>
-            <a href="#main-footer" className="button">
+            <a href="mailto:elmehdielfatihi1111@gmail.com" className="button">
               Contact
             </a>
           </div>

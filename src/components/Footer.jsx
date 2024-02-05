@@ -79,15 +79,6 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <form className="footer-form" name="contact" method="POST" data-netlify="true">
-              <input className="input" type="text" name="name" placeholder="Name" />
-              <input className="input" type="text" name="email" placeholder="Email" />
-              <div className="footer-actions">
-                <button className="button" type="submit">
-                  Submit
-                </button>
-              </div>
-            </form>
           </div>
         </section>
       </footer>
