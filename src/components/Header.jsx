@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Header = () => {
+  const [isOpen, setNavState] = useState(false);
+
   return (
     <div className="container navbar-container">
       <header className="navbar">
@@ -32,19 +34,14 @@ const Header = () => {
               fill="#2D2D2D" />
           </svg>
         </a>
-        <button className="menu-toggler" title="Toggle Menu">
+        <button onClick={() => setNavState(!isOpen)} className="menu-toggler" title="Toggle Menu">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
             className="w-6 h-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
           </svg>
         </button>
-        <nav className="menu">
+        <nav className={`menu ${isOpen ? 'active' : ''}`}>
           <ul className="menu-items">
-            <li>
-              <a className="menu-item" href="/">
-                About
-              </a>
-            </li>
             <li>
               <a className="menu-item" href="#latest-work">
                 Work
@@ -53,6 +50,11 @@ const Header = () => {
             <li>
               <a className="menu-item" href="#main-footer">
                 Contact
+              </a>
+            </li>
+            <li>
+              <a className="menu-item" href="#main-footer">
+                Social Links
               </a>
             </li>
           </ul>
